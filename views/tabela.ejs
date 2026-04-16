@@ -1,0 +1,29 @@
+<%- include ('partials/header.ejs') %>
+  <%- include ('partials/navbar.ejs') %>
+
+    <table class="tabela-jogos">
+      <thead>
+        <tr>
+          <th>Jogo</th>
+          <th>Ano De Lançamento</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% tabela.forEach(tabela=> { %>
+          <tr>
+            <td>
+              <%= tabela.jogo %>
+            </td>
+            <td>
+              <%= tabela.ano %>
+            </td>
+          </tr>
+          <%})%>
+      </tbody>
+    </table>
+
+
+
+
+    <%- include ('partials/footer.ejs') %>

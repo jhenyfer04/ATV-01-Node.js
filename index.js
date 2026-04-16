@@ -1,6 +1,9 @@
 import express from "express";
 
 import PerfilController from"./controllers/PerfilController.js"
+import MarioController from"./controllers/MarioController.js"
+import CuriosidadeController from"./controllers/CuriosidadeController.js"
+import TabelaController from"./controllers/TabelaController.js"
 
 const app = express();
 
@@ -9,10 +12,12 @@ app.set("view engine","ejs");
 app.use(express.static("public"));
 
 app.use("/", PerfilController);
-
+app.use("/", MarioController);
+app.use("/", CuriosidadeController);
+app.use("/", TabelaController);
 
 app.get("/", function(req, res){
-    res.send("index")
+    res.render("index")
 });
 
 

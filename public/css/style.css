@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+ul {
+    list-style: square;
+    line-height: 30px;
+    
+}
+a{
+  color: white!important; 
+}
+
+.personagens img {
+  width: 100%;
+
+}
+
+.footer {
+  background: #DD2026; /* vermelho inspirado */
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 14px;
+  margin-top: 700px;
+}
+
+.footer p {
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/*PERFIL*/
+
+/* CARD */
+.perfil-card {
+  width: 80%;
+  margin: 60px auto;
+  background-color: #244a8f; /* azul escuro */
+  border-radius: 30px;
+  padding: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* IMAGEM */
+.perfil-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+/* TEXTO */
+.perfil-info h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.perfil-info p {
+  color: #dcdcdc;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+/*curiosidades*/
+
+.secao-criador {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px;
+}
+
+/* ESQUERDA */
+.info {
+  width: 280px;
+  text-align: center;
+}
+
+.info img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* DIREITA */
+.jogos {
+  width: 650px; /* 👈 AQUI é o segredo */
+}
+
+.jogos img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*mario*/
+
+/* BANNER */
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* CARD AZUL */
+.card-miyamoto {
+  background-color: #244a8f;
+  padding: 40px 90px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* IMAGEM */
+.img-miyamoto img {
+  width: 130px;
+  height: 130px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.texto-miyamoto {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.tabela-jogos {
+  border-collapse: collapse;
+  width: 500px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.tabela-jogos thead {
+  background-color: #e60012; /* vermelho estilo Nintendo */
+  color: white;
+}
+
+.tabela-jogos th,
+.tabela-jogos td {
+  border: 1px solid #333;
+  padding: 12px;
+}
+
+/* Alinhamento */
+.tabela-jogos td:last-child {
+  text-align: center;
+}
+
+/* Hover */
+.tabela-jogos tr:hover {
+  background-color: #f2f2f2;
+}
